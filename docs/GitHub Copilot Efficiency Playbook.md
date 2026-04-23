@@ -2,6 +2,18 @@
 
 > Token efficiency · Accurate answers · IDE-specific tricks · Tools · Real dev scenarios
 
+## 🚀 Quick Start (Do This First)
+
+New to Copilot optimization? Start here:
+
+1. **Open only relevant files** (not your whole project)
+2. **Write one-line comments above functions** (`// fetch user order from DB`) before letting Copilot complete
+3. **Name things well** (`getUserOrderHistory()` instead of `fetchData()`)
+4. **Use `/explain` and `/tests` slash commands** in VS Code chat
+5. **Install Caveman** for 65–75% fewer output tokens: `npx skills add JuliusBrussee/caveman -a github-copilot`
+
+**Result:** Faster, clearer answers. Fewer token-wasting clarifications.
+
 ---
 
 ## ⚡ Token Efficiency
@@ -48,6 +60,20 @@
 | 3 | **Don't ignore `// TODO` comments in output** | If Copilot writes `// TODO: handle error here`, it's signaling the code is incomplete. |
 | 4 | **Don't use chat for autocomplete tasks** | Inline suggestions are better for small completions. Chat is for reasoning and refactoring. |
 
+### 🎯 Prompting Patterns That Work
+
+**Pattern 1: Context + Constraint**  
+❌ "Generate a button"  
+✅ "Generate a submit button in SwiftUI with loading state and disabled feedback. Use green primary color from theme."
+
+**Pattern 2: Input → Output Example**  
+❌ "Parse this JSON"  
+✅ "Parse this JSON and return a User struct with name, email, createdAt. Show one example input and the struct definition."
+
+**Pattern 3: Reasoning + Code**  
+❌ "Add error handling"  
+✅ "Add error handling for network timeouts and show a retry button. Why does this approach work?"
+
 ---
 
 ## ✨ Tips & Tricks by IDE
@@ -78,6 +104,32 @@
 | **Declare SwiftUI vs UIKit** | Copilot defaults to SwiftUI. If you're on UIKit, state it — mixing them causes subtle bugs. |
 | **Preview-compatible code** | Add "make sure this works in Xcode Preview" to get cleaner, injectable code. |
 | **Protocol stubs via MARK** | Write `// MARK: - UITableViewDelegate` and let Copilot autocomplete all required method stubs. |
+
+---
+
+## ⚡ Quick Wins (Implement Today)
+
+### Right Now
+
+| Action | Payoff | Time |
+|--------|--------|------|
+| Close 50% of open tabs | Reduces noise in Copilot context | 1 min |
+| Add 3-word comment above next function | Copilot generates 40% better code | 30 sec |
+| Use `@workspace` in chat once | Find patterns across whole project | 2 min |
+| Try Alt+] to cycle suggestions | Pick better option on first pass | 1 min |
+
+### This Week
+
+- [ ] Install Caveman skill (`npx skills add JuliusBrussee/caveman`)
+- [ ] Add caveman to custom instructions (Copilot settings)
+- [ ] Use `/explain` slash command in 3 chats
+- [ ] Try `/caveman-commit` on next commit
+- [ ] Review one old file with `/caveman-review` mindset
+
+### Measure
+
+**Before:** "Getting 7-turn clarification loops, slow reviews, verbose output"  
+**After (1 week):** "Copilot nails it in 2–3 turns, reviews are readable, comments are terse"
 
 ---
 
@@ -305,3 +357,39 @@ Code/commits/PRs: normal. Off: "stop caveman" / "normal mode".
 ---
 
 *Last updated: April 2026 · GitHub: [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)*
+
+---
+
+## ✅ Implementation Checklist
+
+**What You've Done & Should Do:**
+
+### Phase 1: Foundation (Essential)
+- [x] Read entire playbook
+- [x] Close unnecessary tabs in IDE (keep only current task files open)
+- [ ] Write 3-word comments above functions before accepting Copilot completions
+- [ ] Use at least one slash command (`/explain`, `/fix`, `/tests`) in Copilot chat
+
+### Phase 2: Tools (Quick Wins)
+- [x] Install Caveman: `npx skills add JuliusBrussee/caveman -a github-copilot`
+- [x] Add Caveman to VS Code custom instructions (paste template from this playbook)
+- [ ] Use `/caveman-commit` for next 3 commits
+- [ ] Try `/caveman full` in one chat and compare token usage
+
+### Phase 3: Workflow (Sustainable)
+- [ ] Use `@workspace` reference in at least one chat
+- [ ] Apply "Context + Constraint" prompting pattern on next feature
+- [ ] Spend <2 min writing prompts (not "clarification loops")
+- [ ] Review one PR using `/caveman-review` mindset
+
+### Phase 4: Scaling (Long-term)
+- [x] Choose model per task (Haiku for boilerplate, Sonnet for logic, Opus for architecture)
+- [ ] Follow one real-world scenario (feature build, bug fix, or brainstorm) end-to-end
+- [ ] Compress `CLAUDE.md` with `/caveman-compress` if using persistent instructions
+- [ ] Measure token savings before/after Caveman (target: 50–70% reduction on output)
+
+### Done Signals
+✅ **Token efficiency:** Fewer than 3 clarification rounds per question  
+✅ **Speed:** Copilot answers in first or second suggestion  
+✅ **Readability:** Output is terse, no filler, 100% technical substance  
+✅ **Habit:** You default to context comments before accepting suggestions
