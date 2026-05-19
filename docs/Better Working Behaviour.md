@@ -1,6 +1,6 @@
 # Better Working Behaviour — Software Engineer
 
-> Monday – Friday · Daily standup 10:30 · Deploy cut-off 16:30
+> Monday – Friday · Daily standup 10:30
 
 ---
 
@@ -36,7 +36,6 @@
 | Open new meetings only at 15:00 or later | Scheduling meetings during deep work hours |
 | PRs must have description + screenshot/video for UI changes | Raising PRs with no description or context |
 | Push WIP and update ticket at end of day | Leaving teammates in the dark on task status |
-| Deploy only before 16:30 | Deploying after cut-off without hotfix justification |
 
 ---
 
@@ -53,12 +52,30 @@
 
 ---
 
+## Mindset
+
+| ✅ Good Behaviour | ❌ Bad Behaviour |
+|-------------------|-----------------|
+| Own the problem end-to-end — not just your ticket | "Not my job" — passing problems without trying |
+| Ask "why" before "how" — understand the problem before jumping to a solution | Jumping straight to implementation without understanding the goal |
+| Treat code review feedback as learning, not criticism | Taking review comments personally |
+| Proactively communicate risks, trade-offs, and blockers to the team | Staying silent about problems until they blow up |
+| Change your mind when shown better evidence — being wrong is fine, staying wrong is not | Defending a bad decision just to avoid being wrong |
+| Think about the next person who reads your code | Writing code only the machine understands |
+| Ship iteratively — done and imperfect beats perfect and never shipped | Perfectionism paralysis — holding back work because "it's not ready" |
+| Ask for help early — knowing when to escalate is a skill | Hero mentality — suffering alone to avoid looking stuck |
+| Understand how your change affects the whole system | Thinking only inside the boundary of your own ticket |
+| Apply first principle thinking — break assumptions down to fundamentals, rebuild from there | Copying solutions without understanding why they work |
+| Apply lateral thinking — explore unconventional approaches before defaulting to the obvious one | Always reaching for the same pattern regardless of whether it fits |
+| Treat SLO as a shared responsibility — actively work to increase and maintain reliability targets, not just react when they breach | Ignoring SLO metrics until an incident forces attention |
+
+---
+
 ## Hard Rules (Non-Negotiable)
 
 | 🔴 Rule |
 |---------|
 | Lunch + prayer break 12:00–13:00 — mandatory, step away from screen |
-| No deploys / new PRs after 16:30 except hotfix |
 | Daily standup at 10:30 — on time, update prepared |
 | No new feature development during regression phase |
 | All tickets must have acceptance criteria before sprint starts |
