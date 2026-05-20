@@ -66,7 +66,7 @@ Each behaviour has a **target stat** — measurable signal you're on track. Use 
 | Write code for the next person who reads it | Readability review comments decrease over time | :heavy_check_mark: |
 | Ship iteratively — imperfect done beats perfect never | Features delivered in smaller, shippable increments | :heavy_check_mark: |
 | Ask for help early — escalating is a skill | Time-to-escalate decreases each sprint | :heavy_check_mark: |
-| Think in systems — understand how your change affects the whole | Fewer cross-team surprises per release | :hourglass: |
+| Think in systems — understand how your change affects the whole | Fewer cross-team surprises per release | :heavy_check_mark: |
 | Apply first principle thinking — break assumptions to fundamentals, rebuild from there | Solutions derived from fundamentals, not cargo-culted | :hourglass: |
 | Apply lateral thinking — explore unconventional approaches before defaulting | Alternative approaches explored before settling | :hourglass: |
 | Treat SLO as shared responsibility — actively increase and maintain reliability targets | SLO maintained or improved sprint over sprint | :hourglass: |
